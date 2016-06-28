@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import './filter/reverse'
 import './filter/currency'
 import './filter/wrap'
+import './directive/demo'
 import App from './App'
 import Foo from 'components/Foo.vue'
 
