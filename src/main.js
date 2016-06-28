@@ -1,24 +1,14 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-
-// Define some components
-var Foo = Vue.extend({
-  template: '<div class="foo">' +
-  '<h2>This is Foo!</h2>' +
-  '<a v-link="{ path: \'/foo/a\' }">Go to Foo</a> &nbsp;' +
-  '<a v-link="{ path: \'/foo/b\' }">Go to Bar</a>' +
-  '<router-view></router-view>' + // <- 嵌套的外链
-  '</div>'
-})
+import './filter/reverse'
+import './filter/currency'
+import './filter/wrap'
+import App from './App'
+import Foo from 'components/Foo.vue'
 
 var Bar = Vue.extend({
   template: '<p>This is bar!</p>'
 })
-
-// The router needs a root component to render.
-// For demo purposes, we will just use an empty one
-// because we are using the HTML as the app template.
-var App = Vue.extend({})
 
 Vue.use(VueRouter)
 
@@ -63,9 +53,6 @@ router.map({
 
     }
   },
-  '/bar': {
-    component: Bar
-  },
   '/hello': {
     name: 'hello',
     component: function (resolve) {
@@ -81,4 +68,4 @@ router.redirect({
 // Now we can start the app!
 // The router will create an instance of App and mount to
 // the element matching the selector #app.
-router.start(App, '#app')
+router.start(App, 'app')
