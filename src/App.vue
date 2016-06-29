@@ -7,6 +7,7 @@
       <!-- use v-link directive for navigation. -->
       <a v-link="{ path: '/foo' }">Go to Foo</a>
       <a v-link="{ path: '/hello' }">Go to Hello</a>
+      <a v-link="{ path: '/grid' }">Go to Grid</a>
     </p>
     <!-- use router-view element as route outlet -->
     <router-view></router-view>

@@ -59,6 +59,12 @@ router.map({
     component: function (resolve) {
       require(['./components/Hello.vue'], resolve)
     }
+  },
+  '/grid': {
+    name: 'Grid',
+    component: function (resolve) {
+      require(['./components/Grid.vue'], resolve)
+    }
   }
 })
 
