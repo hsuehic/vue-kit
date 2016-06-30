@@ -77,6 +77,18 @@ router.map({
     component: function (resolve) {
       require(['./components/Tree.vue'], resolve)
     }
+  },
+  '/modal': {
+    name: 'Modal',
+    component: function (resolve) {
+      require(['./components/Modal.vue'], resolve)
+    }
+  },
+  '/graph': {
+    name: 'SVG Graph',
+    component: function (resolve) {
+      require(['./components/Graph.vue'], resolve)
+    }
   }
 })
 

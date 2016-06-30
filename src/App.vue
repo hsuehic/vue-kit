@@ -10,6 +10,8 @@
       <a v-link="{ path: '/grid' }">Go to Grid</a>
       <a v-link="{ path: '/tree-grid' }">Go to Grid</a>
       <a v-link="{ path: '/tree' }">Tree</a>
+      <a v-link="{ path: '/modal' }">Modal</a>
+      <a v-link="{ path: '/graph' }">SVG Graphic</a>
     </p>
     <!-- use router-view element as route outlet -->
     <router-view></router-view>
