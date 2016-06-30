@@ -1,7 +1,7 @@
 <template>
   <div>
     <form id="search">
-      Search<input name="query" v-model="searchQuery">
+      Search:<input name="query" v-model="searchQuery">
     </form>
     <demo-grid :data="gridData"
                :columns="gridColumns"
@@ -19,7 +19,7 @@
   }
 </style>
 <script>
-  import GridCtrl from './ui/Grid.vue'
+  import DemoGrid from './ui/Grid.vue'
 
   export default {
     data () {
@@ -35,7 +35,7 @@
       }
     },
     components: {
-      'demo-grid': GridCtrl
+      DemoGrid
     }
   }
 </script>

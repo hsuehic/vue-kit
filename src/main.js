@@ -65,6 +65,18 @@ router.map({
     component: function (resolve) {
       require(['./components/Grid.vue'], resolve)
     }
+  },
+  '/tree-grid': {
+    name: 'Tree Grid',
+    component: function (resolve) {
+      require(['./components/TreeGrid.vue'], resolve)
+    }
+  },
+  '/tree': {
+    name: 'Tree',
+    component: function (resolve) {
+      require(['./components/Tree.vue'], resolve)
+    }
   }
 })
 
