@@ -19,6 +19,14 @@ module.exports = {
   dev: {
     env: require('./dev.env'),
     port: 8080,
-    proxyTable: {}
+    proxyTable: {
+      '/rpc': {
+        target: 'http://localhost',
+        changeOrigin: true,
+        pathRewrite:{
+          '^/rpc' : '/data'
+        }
+      }
+    }
   }
 }

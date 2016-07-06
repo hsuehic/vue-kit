@@ -22,11 +22,24 @@
         <option value = "0">default</option>
       </select>
     </div>
+    <ul class = "l-users">
+      <li v-for = "user in users">{{ user.name }}</li>
+    </ul>
   </div>
 </template>
 
 <script>
+  import Vue from 'vue'
+  import VueResource from 'vue-resource'
+
+  Vue.use(VueResource)
+
   export default {
+    http: {
+      headers: {
+        Authorization: 'Basic YXBpOnBhc3N3b3Jk'
+      }
+    },
     data () {
       return {
         name: 'Richard',
@@ -38,7 +51,15 @@
       }
     },
     ready () {
-      this.$http.get('')
+      this.$http.get('/rpc/users.json').then(function (resp) {
+        console.log('Success:')
+        let users = resp.json()
+        this.$set('users', users)
+        console.log(users)
+      }, function (resp) {
+        console.log('Error:')
+        console.log(resp.json())
+      })
     }
   }
 </script>
