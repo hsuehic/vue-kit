@@ -15,7 +15,13 @@
     </p>
     <!-- use router-view element as route outlet -->
     <router-view></router-view>
-    <div v-demo:hello.a.b = "msg"></div>
+    <div v-demo:hello.a.b="msg"></div>
+    <div>
+      <p>Selected:{{selected}}</p>
+      <select v-select = "selected" :option = "options">
+        <option value = "0">default</option>
+      </select>
+    </div>
   </div>
 </template>
 
@@ -23,8 +29,16 @@
   export default {
     data () {
       return {
-        name: 'Richard'
+        name: 'Richard',
+        selected: 0,
+        options: [
+          { id: 1, text: 'hello' },
+          { id: 2, text: 'what' }
+        ]
       }
+    },
+    ready () {
+      this.$http.get('')
     }
   }
 </script>

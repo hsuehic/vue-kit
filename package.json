@@ -13,8 +13,13 @@
     "lint": "eslint --ext .js,.vue src test/unit/specs test/e2e/specs"
   },
   "dependencies": {
+    "babel-runtime": "^6.0.0",
+    "jQuery": "^1.7.4",
+    "jquery": "^3.0.0",
+    "select2": "^4.0.3",
     "vue": "^1.0.21",
-    "babel-runtime": "^6.0.0"
+    "vue-resource": "^0.9.3",
+    "vue-router": "^0.7.13"
   },
   "devDependencies": {
     "babel-core": "^6.0.0",

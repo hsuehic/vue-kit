@@ -1,9 +1,12 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+import VueResource from 'vue-resource'
 import './filter/reverse'
 import './filter/currency'
 import './filter/wrap'
 import './directive/demo'
+import './directive/select'
+
 import App from './App'
 import Foo from 'components/Foo.vue'
 
@@ -12,6 +15,7 @@ var Bar = Vue.extend({
 })
 
 Vue.use(VueRouter)
+Vue.use(VueResource)
 
 // Create a router instance.
 // You can pass in additional options here, but let's

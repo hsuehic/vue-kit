@@ -14,7 +14,6 @@ Vue.directive('demo', {
       'argument -' + this.arg + '<br />' +
       'modifiers - ' + JSON.stringify(this.modifiers) + '<br />' +
       'value -' + value
-    console.log(this.modifiers)
   },
   unbind: () => {
     console.log('demo unbind')
