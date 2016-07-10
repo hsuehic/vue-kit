@@ -2,7 +2,7 @@
     <ul v-show="model.isOpen">
         <template v-for="item in model.menuItems">
             <li>
-                <a :href="item.link|| '#'" :class="item.isActive ? 'active' : ''" :title="item.label">
+                <a v-link ="item.link|| '#'" :title="item.label">
                     <i :class="['icon','fa','fa-' + item.icon]" v-if="item.icon">
                     </i><span class="label">{{item.label}}</span>
                     <i :class="['collapse','fa', 'fa-angle-left','f-right',{'expanded':item.subMenu.isOpen}]"

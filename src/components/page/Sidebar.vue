@@ -114,10 +114,10 @@
         .side-bar {
             width: $l_sidebar_width_normal;
         }
-        .side-bar.collapsed {
+        .collapsed .side-bar {
             width: $l_sidebar_width_collapse;
         }
-        .side-bar.collapsed .sub-menu{
+        .collapsed .side-bar .sub-menu{
             display: none;
         }
         .collapse-nav .fa-angle-left {
@@ -132,14 +132,19 @@
 <script>
     import Menu from '../ui/Menu.vue'
     export default{
+        props: {
+            collapsed: {
+                required: true,
+                type: Boolean
+            }
+        },
         data () {
             var menu = {
                 isOpen: true,
                 menuItems: [{
                     label: 'Dashboard',
                     link: '/dashboard',
-                    icon: 'dashboard',
-                    isActive: true
+                    icon: 'dashboard'
                 }, {
                     label: 'UI Components',
                     icon: 'laptop',

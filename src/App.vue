@@ -1,6 +1,6 @@
 <template>
     <div id="app" :class = "{'collapsed':collapsed}">
-        <side-bar></side-bar>
+        <side-bar :collapsed.sync = "collapsed"></side-bar>
         <section class="app-main">
             <div class="app-main-header">
                 <header-bar></header-bar>
@@ -73,7 +73,7 @@
         .app-main {
             margin-left: 230px;
         }
-        .collapse .app-main {
+        .collapsed .app-main {
             margin-left: 60px;
         }
     }
