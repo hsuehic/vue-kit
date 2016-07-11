@@ -1,12 +1,14 @@
 <template>
-    <div id="app" :class = "{'collapsed':collapsed}">
-        <side-bar :collapsed.sync = "collapsed"></side-bar>
+    <div id="app" :class="{'collapsed':collapsed}">
+        <side-bar :collapsed.sync="collapsed"></side-bar>
         <section class="app-main">
             <div class="app-main-header">
                 <header-bar></header-bar>
             </div>
             <div class="app-main-body">
-                <router-view></router-view>
+                <div class="container">
+                    <router-view></router-view>
+                </div>
             </div>
         </section>
     </div>
@@ -41,10 +43,11 @@
         transition: all .3s;
     }
 
-    .app-main-header{
-        position:relative;
+    .app-main-header {
+        position: relative;
         z-index: 100;
     }
+
     .app-main-body {
         position: relative;
         margin-top: -58px;
@@ -53,14 +56,16 @@
         padding: 73px 15px 15px 15px;
         background: $bg_app_main;
         z-index: 99;
+        overflow-y: auto;
     }
 
-    .app-main-body>*{
-        margin:0;
-        position:relative;
-        width:100%;
-        height: 100%;
+    .app-main-body > * {
+        margin: 0 auto;
+        position: relative;
+        width: 100%;
+        min-height: 100%;
         background: #fff;
+        padding: 10px;
     }
 
     @media screen and (max-width: $l_sidebar_breakpoint) {

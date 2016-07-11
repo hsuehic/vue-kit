@@ -16,13 +16,16 @@
     @import "./../../scss/_variable.scss";
 
     .header-logo {
+        position: relative;
         height: 58px;
         width: 100%;
         text-align: center;
         line-height: 58px;
         overflow: hidden;
         background-color: $bg_side_bar_light;
-        .fa {
+        .fa-diamond{
+            position: relative;
+            animation: rotate-y 6s ease infinite;
             font-size: 32px;
             color: #42b983;
             vertical-align: middle;
@@ -53,6 +56,10 @@
                 .icon {
                     margin: 0 20px 0 5px;
                     width: 20px;
+                }
+                .label {
+                    color: inherit;
+                    font-weight: normal;
                 }
                 .icon, .label, .collapse {
                     vertical-align: middle;
@@ -123,6 +130,7 @@
         .collapse-nav .fa-angle-left {
             transition: all;
             transition-duration: .3s;
+            vertical-align: middle;
         }
         .collapsed .collapse-nav .fa-angle-left{
             transform: rotate(180deg);
@@ -148,6 +156,7 @@
                 }, {
                     label: 'UI Components',
                     icon: 'laptop',
+                    link: '/components',
                     subMenu: {
                         isOpen: true,
                         menuItems: [{
@@ -168,6 +177,23 @@
                         }]
                     }
                 }, {
+                    label: 'Grid',
+                    icon: 'table',
+                    link: '/grid',
+                    subMenu: {
+                        isOpen: true,
+                        menuItems: [{
+                            label: 'Columns',
+                            link: '/grid/columns'
+                        }, {
+                            label: 'Tile',
+                            link: '/grid/tile'
+                        }, {
+                            label: 'Table',
+                            link: '/grid/table'
+                        }]
+                    }
+                }, {
                     label: 'UI Controls',
                     icon: 'briefcase'
                 }, {
@@ -176,6 +202,7 @@
                 }, {
                     label: 'Charts',
                     icon: 'bar-chart',
+                    link: '/charts',
                     subMenu: {
                         isOpen: true,
                         menuItems: [{

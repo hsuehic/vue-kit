@@ -2,12 +2,11 @@
     <ul v-show="model.isOpen">
         <template v-for="item in model.menuItems">
             <li>
-                <a v-link ="item.link|| '#'" :title="item.label">
+                <a v-link ="{ path: item.link, exact: true }" :title="item.label" @click="toggleSubMenu(item.subMenu,$event)">
                     <i :class="['icon','fa','fa-' + item.icon]" v-if="item.icon">
                     </i><span class="label">{{item.label}}</span>
                     <i :class="['collapse','fa', 'fa-angle-left','f-right',{'expanded':item.subMenu.isOpen}]"
                        v-if="item.subMenu"
-                       @click="toggleSubMenu(item.subMenu)"
                     ></i>
                 </a>
             </li>
@@ -52,8 +51,15 @@
             return {}
         },
         methods: {
-            toggleSubMenu (menu) {
-                menu.isOpen = !menu.isOpen
+            openSubMenu (menu, $event) {
+                menu.isOpen = true
+            },
+            toggleSubMenu (menu, $event) {
+                if (menu) {
+                    menu.isOpen = !menu.isOpen
+                    $event.preventDefault()
+                    $event.stopPropagation()
+                }
             }
         }
     }

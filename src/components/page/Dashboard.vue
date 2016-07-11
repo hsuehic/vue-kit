@@ -1,7 +1,21 @@
 <template>
-    <div>
-        <div v-if="show" transition="expand">hello</div>
-        <input type="checkbox" v-model="show">
+    <div class="tile is-ancestor" _v-cfb876ca="">
+        <div class="tile is-parent" _v-cfb876ca="">
+            <article class="tile is-child is-success box" _v-cfb876ca=""><p class="title" _v-cfb876ca="">One</p>
+                <p class="subtitle" _v-cfb876ca="">Subtitle</p></article>
+        </div>
+        <div class="tile is-parent" _v-cfb876ca="">
+            <article class="tile is-child box" _v-cfb876ca=""><p class="title" _v-cfb876ca="">Two</p>
+                <p class="subtitle" _v-cfb876ca="">Subtitle</p></article>
+        </div>
+        <div class="tile is-parent" _v-cfb876ca="">
+            <article class="tile is-child box" _v-cfb876ca=""><p class="title" _v-cfb876ca="">Three</p>
+                <p class="subtitle" _v-cfb876ca="">Subtitle</p></article>
+        </div>
+        <div class="tile is-parent" _v-cfb876ca="">
+            <article class="tile is-child box" _v-cfb876ca=""><p class="title" _v-cfb876ca="">Four</p>
+                <p class="subtitle" _v-cfb876ca="">Subtitle</p></article>
+        </div>
     </div>
 </template>
 <style>

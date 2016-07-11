@@ -29,8 +29,39 @@ var router = new VueRouter({
 // We'll talk about nested routes later.
 router.map({
     '/dashboard': {
-        Name: 'Dashboard',
+        name: 'Dashboard',
         component: makeComponent('./components/page/Dashboard.vue')
+    },
+    '/components': {
+        component: {
+            template: '<router-view></router-view>'
+        },
+        subRoutes: {
+            '/': {
+                name: 'Buttons',
+                component: makeComponent('./components/page/Buttons.vue')
+            },
+            '/buttons': {
+                name: 'Buttons',
+                component: makeComponent('./components/page/Buttons.vue')
+            },
+            '/icons': {
+                name: 'Icons',
+                component: makeComponent('./components/page/Icons.vue')
+            }
+        }
+    },
+    '/grid/columns': {
+        name: 'Columns',
+        component: makeComponent('./components/page/Columns.vue')
+    },
+    '/grid/tile': {
+        name: 'Tile',
+        component: makeComponent('./components/page/Tile.vue')
+    },
+    '/grid/table': {
+        name: 'Table',
+        component: makeComponent('./components/page/Table.vue')
     }
 })
 
