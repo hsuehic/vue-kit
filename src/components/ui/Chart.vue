@@ -1,20 +1,19 @@
 <template>
-    <chart></chart>
+    <canvas></canvas>
 </template>
 <style>
-    body{
-        background-color:#ff0000;
+    canvas{
+        max-width:100%;
     }
 </style>
 <script>
-    import Chart from '../ui/Chart.vue'
     export default{
         data () {
             return {
+                msg: 'hello vue'
             }
         },
         components: {
-            Chart
         }
     }
 </script>
