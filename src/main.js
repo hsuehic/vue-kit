@@ -2,14 +2,9 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 
 import App from './App'
+import {menu} from './config'
 
 Vue.use(VueRouter)
-
-const makeComponent = (path) => {
-    return (resolve) => {
-        require([path], resolve)
-    }
-}
 
 // Create a router instance.
 // You can pass in additional options here, but let's
@@ -27,43 +22,7 @@ var router = new VueRouter({
 // either be an actual component constructor created via
 // Vue.extend(), or just a component options object.
 // We'll talk about nested routes later.
-router.map({
-    '/dashboard': {
-        name: 'Dashboard',
-        component: makeComponent('./components/page/Dashboard.vue')
-    },
-    '/components': {
-        component: {
-            template: '<router-view></router-view>'
-        },
-        subRoutes: {
-            '/': {
-                name: 'Buttons',
-                component: makeComponent('./components/page/Buttons.vue')
-            },
-            '/buttons': {
-                name: 'Buttons',
-                component: makeComponent('./components/page/Buttons.vue')
-            },
-            '/icons': {
-                name: 'Icons',
-                component: makeComponent('./components/page/Icons.vue')
-            }
-        }
-    },
-    '/grid/columns': {
-        name: 'Columns',
-        component: makeComponent('./components/page/Columns.vue')
-    },
-    '/grid/tile': {
-        name: 'Tile',
-        component: makeComponent('./components/page/Tile.vue')
-    },
-    '/grid/table': {
-        name: 'Table',
-        component: makeComponent('./components/page/Table.vue')
-    }
-})
+router.map(menu)
 
 router.redirect({
     '*': '/dashboard'

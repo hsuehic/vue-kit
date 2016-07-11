@@ -1,6 +1,6 @@
 <template>
     <div id="app" :class="{'collapsed':collapsed}">
-        <side-bar :collapsed.sync="collapsed"></side-bar>
+        <side-navi :collapsed.sync="collapsed"></side-navi>
         <section class="app-main">
             <div class="app-main-header">
                 <header-bar></header-bar>
@@ -16,6 +16,7 @@
 
 <script>
     import SideBar from 'components/page/Sidebar.vue'
+    import SideNaviBar from 'components/page/SideNaviBar.vue'
     import HeaderBar from 'components/page/Header.vue'
 
     export default {
@@ -28,7 +29,8 @@
         },
         components: {
             SideBar,
-            HeaderBar
+            HeaderBar,
+            'side-navi': SideNaviBar
         }
     }
 </script>
