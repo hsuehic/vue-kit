@@ -12,8 +12,8 @@
             </div>
             <div class="column is-half">
                 <div class="box">
-                    <h3 class="title">Basic</h3>
-                    <chart :type = "'pie'" :data = "chartData"></chart>
+                    <h3 class="title">Dynamic</h3>
+                    <chart :type = "'pie'" :data = "dynamicChartData"></chart>
                 </div>
             </div>
         </div>
@@ -26,7 +26,8 @@
     export default{
         data () {
             return {
-                data: [200, 300, 200]
+                data: [200, 300, 200],
+                dynamicData: [200, 300, 400]
             }
         },
         computed: {
@@ -46,7 +47,32 @@
                         ]
                     }]
                 }
+            },
+            dynamicChartData () {
+                return {
+                    labels: [
+                        'Red',
+                        'Blue',
+                        'Yellow'
+                    ],
+                    datasets: [{
+                        data: this.dynamicData,
+                        backgroundColor: [
+                            '#FF6384',
+                            '#36A2EB',
+                            '#FFCE56'
+                        ]
+                    }]
+                }
             }
+        },
+        created () {
+            var self = this
+            setInterval(function () {
+                self.dynamicData.forEach(function (item, i) {
+                    self.dynamicData.$set(i, Math.ceil(Math.random() * 1000))
+                })
+            }, 1024)
         },
         components: {
             Chart
