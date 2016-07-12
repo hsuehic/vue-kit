@@ -34,9 +34,14 @@ let menu = {
                 component: makeComponent('./components/page/Icons.vue')
             },
             '/content': {
-                name: 'Content',
+                name: 'content',
                 label: 'Content',
                 component: makeComponent('./components/page/Content.vue')
+            },
+            '/form': {
+                name: 'form',
+                label: 'Form',
+                component: makeComponent('./components/page/Form.vue')
             }
         }
     },
@@ -63,6 +68,11 @@ let menu = {
                 name: 'table',
                 label: 'Table',
                 component: makeComponent('./components/page/Table.vue')
+            },
+            '/flex': {
+                name: 'flex',
+                label: 'Flex',
+                component: makeComponent('./components/page/Flex.vue')
             }
         }
     },
