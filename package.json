@@ -2,6 +2,7 @@
   "name": "gistop",
   "version": "1.0.0",
   "description": "A Vue.js starter project",
+  "keywords": ["Vuejs", "Bulma", "Font Awesome", "Admin"],
   "author": "薛晓伟 <xuexiaowei@megvii.com>",
   "private": false,
   "scripts": {
