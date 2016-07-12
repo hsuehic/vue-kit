@@ -25,7 +25,7 @@
         background-color: $bg_side_bar_light;
         .fa-diamond{
             position: relative;
-            animation: rotate-y 6s ease infinite;
+            animation: rotate-y 4s ease infinite;
             font-size: 32px;
             color: #42b983;
             vertical-align: middle;
@@ -149,7 +149,6 @@
             }
         },
         data () {
-            console.log(menu)
             return {
                 menu: menu
             }
