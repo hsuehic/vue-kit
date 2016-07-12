@@ -1,19 +1,19 @@
 <template>
     <section class="section">
-        <h1 class="title">Pie Chart Examples</h1>
+        <h1 class="title">Doughnut Chart Examples</h1>
         <h3 class="subtitle">Using chart.js</h3>
         <hr>
         <div class="columns">
             <div class="column is-half">
                 <div class="box">
                     <h3 class="title">Basic</h3>
-                    <chart :type = "'pie'" :data = "chartData"></chart>
+                    <chart :type = "'doughnut'" :data = "chartData"></chart>
                 </div>
             </div>
             <div class="column is-half">
                 <div class="box">
                     <h3 class="title">Dynamic</h3>
-                    <chart :type = "'pie'" :data = "dynamicChartData"></chart>
+                    <chart :type = "'doughnut'" :data = "dynamicChartData"></chart>
                 </div>
             </div>
         </div>
@@ -68,7 +68,7 @@
         },
         created () {
             var self = this
-            this.timer = setInterval(function () {
+            self.timer = setInterval(function () {
                 self.dynamicData.forEach(function (item, i) {
                     self.dynamicData.$set(i, Math.ceil(Math.random() * 1000))
                 })

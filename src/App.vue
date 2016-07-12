@@ -15,7 +15,6 @@
 </template>
 
 <script>
-    import SideBar from 'components/page/Sidebar.vue'
     import SideNaviBar from 'components/page/SideNaviBar.vue'
     import HeaderBar from 'components/page/Header.vue'
 
@@ -28,7 +27,6 @@
         ready () {
         },
         components: {
-            SideBar,
             HeaderBar,
             'side-navi': SideNaviBar
         }

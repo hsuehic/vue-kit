@@ -10,7 +10,7 @@
     import uuid from '../../lib/uuid'
     import Chart from 'chart.js/dist/Chart.js'
 
-    const types = ['line', 'bar', 'radar', 'polarArea', 'pie', 'doughnut']
+    const types = ['line', 'bar', 'horizontalBar', 'radar', 'polarArea', 'pie', 'doughnut']
 
     export default{
         mixins: [uuid],

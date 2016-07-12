@@ -150,9 +150,9 @@ let menu = {
                 name: 'doughnut',
                 component: makeComponent('./components/page/Doughnut.vue')
             }, '/polar': {
-                label: 'Polar',
+                label: 'Polar Area',
                 name: 'polar',
-                component: makeComponent('./components/page/Polar.vue')
+                component: makeComponent('./components/page/PolarArea.vue')
             }
         }
     }
