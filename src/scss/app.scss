@@ -16,6 +16,9 @@ body {
     line-height: 20px;
 }
 
+body, button, input, select, textarea{
+    font-family: Arial,"宋体";
+}
 * {
     box-sizing: border-box;
     overflow: hidden;

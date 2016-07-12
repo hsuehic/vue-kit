@@ -22,7 +22,7 @@
                 <span>Templates</span>
                 <span class="tag is-small is-success">New!</span>
             </a>
-            <a class="nav-item is-active">
+            <a class="nav-item">
                 Documentation
             </a>
             <a class="nav-item " href="/blog/">
@@ -55,7 +55,7 @@
         background: #fff;
         height: 58px;
         line-height: 58px;
-        font-size: 18px;
+        font-size: 14px;
         padding: 0 0 0 15px;
         text-align: left;
     }

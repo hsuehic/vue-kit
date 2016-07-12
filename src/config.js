@@ -18,7 +18,7 @@ let menu = {
     '/components': {
         icon: 'laptop',
         label: 'Component',
-        isShowSubMenu: true,
+        isShowSubMenu: false,
         component: {
             template: '<router-view></router-view>'
         },
@@ -46,7 +46,7 @@ let menu = {
         }
     },
     '/grid': {
-        isShowSubMenu: true,
+        isShowSubMenu: false,
         icon: 'table',
         name: 'grid',
         label: 'Grid',
@@ -76,25 +76,51 @@ let menu = {
             }
         }
     },
-    '/controls': {
-        label: 'UI Controls',
+    '/filters': {
+        isShowSubMenu: false,
+        label: 'Filter',
         icon: 'briefcase',
         component: {
             template: '<router-view></router-view>'
+        },
+        subRoutes: {
+            '/filter-by': {
+                label: 'Filter By',
+                name: 'filter-by',
+                component: makeComponent('./components/page/FilterBy.vue')
+            },
+            '/order-by': {
+                label: 'Order By',
+                name: 'order-by',
+                component: makeComponent('./components/page/OrderBy.vue')
+            }
         }
     },
-    '/directives': {
-        label: 'UI Directives',
+    '/animation': {
+        label: 'Animation',
+        isShowSubMenu: false,
         icon: 'cog',
         component: {
             template: '<router-view></router-view>'
+        },
+        subRoutes: {
+            '/keyframes': {
+                name: 'keyframes',
+                label: 'Keyframes',
+                component: makeComponent('./components/page/Keyframes.vue')
+            },
+            '/transition': {
+                name: 'transition',
+                label: 'Transition',
+                component: makeComponent('./components/page/Transition.vue')
+            }
         }
     },
     '/charts': {
         label: 'Charts',
         icon: 'bar-chart',
         name: 'charts',
-        isShowSubMenu: true,
+        isShowSubMenu: false,
         component: {
             template: '<router-view></router-view>'
         },

@@ -1,5 +1,5 @@
 <template>
-    <canvas></canvas>
+    <canvas :width = "width" :height="height"></canvas>
 </template>
 <style>
     canvas{
@@ -7,21 +7,66 @@
     }
 </style>
 <script>
+    import uuid from '../../lib/uuid'
+    import Chart from 'chart.js/dist/Chart.js'
+
+    const types = ['line', 'bar', 'radar', 'polarArea', 'pie', 'doughnut']
+
     export default{
+        mixins: [uuid],
         props: {
             width: {
                 type: Number
             },
             height: {
                 type: Number
+            },
+            type: {
+                type: String,
+                required: true,
+                validate (value) {
+                    return types.indexOf(value) > -1
+                }
+            },
+            data: {
+                type: Object,
+                required: true,
+                default () {
+                    return {}
+                }
+            },
+            options: {
+                type: Object,
+                default () {
+                    return {}
+                }
             }
+        },
+        ready () {
+            var self = this
+            const $el = this.$el
+            const id = `va-canvas-${this.uuid}`
+            $el.setAttribute('id', id)
+            this.chart = new Chart($el, {
+                type: self.type,
+                data: self.data,
+                options: this.options
+            })
         },
         data () {
             return {
-                msg: 'hello vue'
+                chart: null
             }
         },
-        components: {
+        watch: {
+            data: {
+                handler (val, oldVal) {
+                    this.$nextTick(function () {
+                        this.chart.update()
+                    })
+                },
+                deep: true
+            }
         }
     }
 </script>

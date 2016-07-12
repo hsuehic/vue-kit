@@ -58,6 +58,7 @@
                     width: 20px;
                 }
                 .label {
+                    margin: 0;
                     color: inherit;
                     font-weight: normal;
                 }
