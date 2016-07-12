@@ -39,7 +39,7 @@
             </div>
             <div class="column is-half">
                 <div class="box">
-                    <h3>Barchart</h3>
+                    <h3>Bar Chart</h3>
                     <div>
                         <chart type="bar" :data="barData"></chart>
                     </div>
@@ -49,7 +49,7 @@
         <div class="columns">
             <div class="column is-half">
                 <div class="box">
-                    <h3>Radar</h3>
+                    <h3>Radar Chart</h3>
                     <div>
                         <chart type="radar" :data="radarData"></chart>
                     </div>
@@ -57,7 +57,7 @@
             </div>
             <div class="column is-half">
                 <div class="box">
-                    <h3>Polar Area</h3>
+                    <h3>Polar Area Chart</h3>
                     <div>
                         <chart type="polarArea" :data="dynamicPolarAreaData"></chart>
                     </div>
