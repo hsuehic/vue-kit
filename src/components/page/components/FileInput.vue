@@ -16,8 +16,8 @@
                 </div>
             </div>
             <div class="column is-half">
-                <h3>Using Picture</h3>
                 <div class="box">
+                    <h3>Using Picture</h3>
                     <file-input name = "file1" accept = "image/jpeg,image/png" @changed = "fileSelectHandler2">
                         <div class="icon-upload"><i class="fa fa-4x fa-cloud-upload"></i></div>
                     </file-input>
