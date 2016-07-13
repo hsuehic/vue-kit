@@ -1,6 +1,14 @@
-# gismall
+# Vue Start Kit
 
-> A Vue.js project
+> A Vue.js project, base on vue-webpack template, with bulma, chart.js, font awesome.
+
+## Demo
+
+[http://vue-kit.gismall.com/](http://vue-kit.gismall.com/)
+
+## Screen shots
+
+![](src/asserts/img/screen-dashboard.png)
 
 ## Build Setup
 

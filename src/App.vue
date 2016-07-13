@@ -25,6 +25,19 @@
             }
         },
         ready () {
+            this.appMainBody = this.$el.getElementsByClassName('app-main-body')[0]
+        },
+        watch: {
+            '$route.name': {
+                handler: function (val, oldVal) {
+                    try {
+                        console.log(this.appMainBody.scrollTop)
+                        this.appMainBody.scrollTop = 0
+                    } catch (ex) {
+                        console.log(ex)
+                    }
+                }
+            }
         },
         components: {
             HeaderBar,
