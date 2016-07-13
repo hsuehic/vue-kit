@@ -19,18 +19,34 @@
                 <h3>Using Picture</h3>
                 <div class="box">
                     <file-input name = "file1" accept = "image/jpeg,image/png" @changed = "fileSelectHandler2">
-                        <a class="button is-primary is-outlined is-large"><i class="fa fa-3x fa-cloud-upload"></i></a>
+                        <div class="icon-upload"><i class="fa fa-4x fa-cloud-upload"></i></div>
                     </file-input>
                     <p class="control">
                         <label class="label">{{pictureFileName2}}</label>
-                        <img class="image" :src="pictureUrl2">
+                        <input class="input" v-model="pictureFileName2" placeholder="请选择文件">
                     </p>
+                    <img class="image" :src="pictureUrl2">
                 </div>
             </div>
         </div>
     </section>
 </template>
-<style>
+<style scoped>
+    .icon-upload {
+        display: inline-block;
+        text-align: center;
+        background-color: #eee;
+        color:#aaa;
+    }
+    .icon-upload i {
+        height: 90px;
+        width: 90px;
+        line-height: 90px;
+    }
+    .icon-upload:hover {
+        color: #fff;
+        background-color: #3aabf0;
+    }
 </style>
 <script>
     import FileInput from '../../ui/NiceFileInput.vue'
