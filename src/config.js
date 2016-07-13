@@ -26,22 +26,22 @@ let menu = {
             '/buttons': {
                 name: 'Buttons',
                 label: 'Buttons',
-                component: makeComponent('./components/page/Buttons.vue')
+                component: makeComponent('./components/page/components/Buttons.vue')
             },
             '/icons': {
                 name: 'Icons',
                 label: 'Icons',
-                component: makeComponent('./components/page/Icons.vue')
+                component: makeComponent('./components/page/components/Icons.vue')
             },
             '/content': {
                 name: 'content',
                 label: 'Content',
-                component: makeComponent('./components/page/Content.vue')
+                component: makeComponent('./components/page/components/Content.vue')
             },
             '/form': {
                 name: 'form',
                 label: 'Form',
-                component: makeComponent('./components/page/Form.vue')
+                component: makeComponent('./components/page/components/Form.vue')
             }
         }
     },
@@ -57,22 +57,22 @@ let menu = {
             '/columns': {
                 name: 'columns',
                 label: 'Columns',
-                component: makeComponent('./components/page/Columns.vue')
+                component: makeComponent('./components/page/grids/Columns.vue')
             },
             '/tile': {
                 name: 'tile',
                 label: 'Tile',
-                component: makeComponent('./components/page/Tile.vue')
+                component: makeComponent('./components/page/grids/Tile.vue')
             },
             '/table': {
                 name: 'table',
                 label: 'Table',
-                component: makeComponent('./components/page/Table.vue')
+                component: makeComponent('./components/page/grids/Table.vue')
             },
             '/flex': {
                 name: 'flex',
                 label: 'Flex',
-                component: makeComponent('./components/page/Flex.vue')
+                component: makeComponent('./components/page/grids/Flex.vue')
             }
         }
     },
@@ -87,12 +87,12 @@ let menu = {
             '/filter-by': {
                 label: 'Filter By',
                 name: 'filter-by',
-                component: makeComponent('./components/page/FilterBy.vue')
+                component: makeComponent('./components/page/filters/FilterBy.vue')
             },
             '/order-by': {
                 label: 'Order By',
                 name: 'order-by',
-                component: makeComponent('./components/page/OrderBy.vue')
+                component: makeComponent('./components/page/filters/OrderBy.vue')
             }
         }
     },
@@ -107,12 +107,12 @@ let menu = {
             '/keyframes': {
                 name: 'keyframes',
                 label: 'Keyframes',
-                component: makeComponent('./components/page/Keyframes.vue')
+                component: makeComponent('./components/page/animation/Keyframes.vue')
             },
             '/transition': {
                 name: 'transition',
                 label: 'Transition',
-                component: makeComponent('./components/page/Transition.vue')
+                component: makeComponent('./components/page/animation/Transition.vue')
             }
         }
     },
@@ -120,7 +120,7 @@ let menu = {
         label: 'Charts',
         icon: 'bar-chart',
         name: 'charts',
-        isShowSubMenu: false,
+        isShowSubMenu: true,
         component: {
             template: '<router-view></router-view>'
         },
@@ -128,31 +128,31 @@ let menu = {
             '/pie': {
                 label: 'Pie',
                 name: 'pie',
-                component: makeComponent('./components/page/Pie.vue')
+                component: makeComponent('./components/page/charts/Pie.vue')
             },
             '/bar': {
                 label: 'Bar',
                 name: 'bar',
-                component: makeComponent('./components/page/Bar.vue')
+                component: makeComponent('./components/page/charts/Bar.vue')
             },
             '/line': {
                 label: 'Line',
                 name: 'line',
-                component: makeComponent('./components/page/Line.vue')
+                component: makeComponent('./components/page/charts/Line.vue')
             },
             '/radar': {
                 label: 'Radar',
                 name: 'radar',
-                component: makeComponent('./components/page/Radar.vue')
+                component: makeComponent('./components/page/charts/Radar.vue')
             },
             '/doughnut': {
                 label: 'Doughnut',
                 name: 'doughnut',
-                component: makeComponent('./components/page/Doughnut.vue')
+                component: makeComponent('./components/page/charts/Doughnut.vue')
             }, '/polar': {
                 label: 'Polar Area',
                 name: 'polar',
-                component: makeComponent('./components/page/PolarArea.vue')
+                component: makeComponent('./components/page/charts/PolarArea.vue')
             }
         }
     }
