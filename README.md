@@ -8,7 +8,7 @@
 
 ## Screen shots
 
-![](src/asserts/img/screen-dashboard.png)
+![](src/assets/img/screen-dashboard.png)
 
 ## Build Setup
 
