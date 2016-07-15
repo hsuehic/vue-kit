@@ -8,7 +8,7 @@
                     <label class="label">Picture</label>
                     <p class="control has-addons">
                         <input class="input" type="text" v-model="pictureFile">
-                        <file-input name = "file1" accept = "image/jpeg,image/png" @changed = "fileSelectedHandler">
+                        <file-input name = "file1" accept = "image/*" @changed = "fileSelectedHandler">
                             <a class="button is-primary">选择</a>
                         </file-input>
                     </p>
@@ -18,7 +18,7 @@
             <div class="column is-half">
                 <div class="box">
                     <h3>Using Picture</h3>
-                    <file-input name = "file1" accept = "image/jpeg,image/png" @changed = "fileSelectHandler2">
+                    <file-input name = "file1" accept = "image/*" @changed = "fileSelectHandler2">
                         <div class="icon-upload"><i class="fa fa-4x fa-cloud-upload"></i></div>
                     </file-input>
                     <p class="control">

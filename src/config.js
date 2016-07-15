@@ -160,6 +160,22 @@ let menu = {
                 component: makeComponent('./components/page/charts/PolarArea.vue')
             }
         }
+    },
+    '/tools': {
+        name: 'tools',
+        label: 'Tools',
+        icon: 'cog',
+        isShowSubMenu: false,
+        component: {
+            template: '<router-view></router-view>'
+        },
+        subRoutes: {
+            '/image': {
+                name: 'image',
+                label: 'Image Extract',
+                component: makeComponent('./components/page/tools/ImageExtract.vue')
+            }
+        }
     }
 }
 export {menu}
