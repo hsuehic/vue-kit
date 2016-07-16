@@ -2,6 +2,8 @@
 
 > A Vue.js project, base on vue-webpack template, with bulma, chart.js, font awesome.
 
+> 用于快速构建产品原型或者演示demo
+
 ## Demo
 
 [http://vue-kit.gismall.com/](http://vue-kit.gismall.com/)
