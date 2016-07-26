@@ -6,9 +6,10 @@
 
 #<footer>
 #注：
-#scope选填，
-#body选填
-#footer选填
+#scope选填，如模块名/子模块名
+#body选填,详细说明
+#footer选填 close #{issueid},
+#type值说明如下
 #feat：新功能（feature）
 #fix：修补bug fixed #{bugid}
 #issue: 修改问题 closed #{issueid}
