@@ -1,9 +1,9 @@
 {
-  "name": "gistop",
-  "version": "1.0.0",
+  "name": "vue-kit",
+  "version": "0.0.1",
   "description": "A Vue.js starter project",
   "keywords": ["Vuejs", "Bulma", "Font Awesome", "Admin"],
-  "author": "薛晓伟 <xuexiaowei@megvii.com>",
+  "author": "薛晓伟 <xiaoweihsueh@gmaill.com>",
   "private": false,
   "scripts": {
     "dev": "node build/dev-server.js",

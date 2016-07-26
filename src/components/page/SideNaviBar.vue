@@ -105,7 +105,7 @@
             padding-left: 45px;
         }
     }
-
+/**
     @media screen and (max-width: $l_sidebar_breakpoint) {
         .side-bar {
             width: $l_sidebar_width_collapse;
@@ -118,7 +118,7 @@
         }
     }
 
-    @media screen and (min-width: $l_sidebar_breakpoint) {
+    @media screen and (min-width: $l_sidebar_breakpoint) {**/
         .side-bar {
             width: $l_sidebar_width_normal;
         }
@@ -136,7 +136,7 @@
         .collapsed .collapse-nav .fa-angle-left{
             transform: rotate(180deg);
         }
-    }
+   /** }**/
 </style>
 <script>
     import {menu} from '../../config'

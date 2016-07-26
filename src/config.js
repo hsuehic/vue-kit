@@ -47,6 +47,11 @@ let menu = {
                 name: 'file-input',
                 label: 'File input',
                 component: makeComponent('./components/page/components/FileInput.vue')
+            },
+            '/tab': {
+                name: 'tab',
+                label: 'Tab',
+                component: makeComponent('./components/page/components/Tabs.vue')
             }
         }
     },

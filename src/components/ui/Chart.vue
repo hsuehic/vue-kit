@@ -8,7 +8,7 @@
 </style>
 <script>
     import uuid from '../../lib/uuid'
-    import Chart from 'chart.js/dist/Chart.js'
+    import Chart from 'chart.js/src/Chart.js'
 
     const types = ['line', 'bar', 'horizontalBar', 'radar', 'polarArea', 'pie', 'doughnut']
 
