@@ -81,13 +81,13 @@
         padding: 10px;
     }
 
-    @media screen and (max-width: $l_sidebar_breakpoint) {
+    @media (max-width: $l_sidebar_breakpoint) {
         .app-main {
-            margin-left: 60px;
+            margin-left: 0;
         }
     }
 
-    @media screen and(min-width: $l_sidebar_breakpoint) {
+    @media (min-width: $l_sidebar_breakpoint) {
         .app-main {
             margin-left: 230px;
         }

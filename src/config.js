@@ -52,6 +52,11 @@ let menu = {
                 name: 'tab',
                 label: 'Tab',
                 component: makeComponent('./components/page/components/Tabs.vue')
+            },
+            '/modal': {
+                name: 'modal',
+                label: 'Modal',
+                component: makeComponent('./components/page/components/Modals.vue')
             }
         }
     },

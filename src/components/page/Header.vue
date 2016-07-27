@@ -1,6 +1,7 @@
 <template>
     <nav class="nav header-bar">
         <div class="nav-left">
+
         </div>
         <div class="nav-center">
             <a class="nav-item" href="https://github.com/gismall/gismall">

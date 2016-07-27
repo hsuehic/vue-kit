@@ -14,7 +14,7 @@
 <style>
 </style>
 <script>
-  import Modal from './ui/Modal.vue'
+  import Modal from './ui/Modal/Modal.vue'
   export default{
     data () {
       return {

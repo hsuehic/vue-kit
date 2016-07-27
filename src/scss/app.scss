@@ -1,6 +1,11 @@
 @import "variable";
 @import "~bulma";
 
+@viewport {
+    zoom: 1;
+    width: device-width;
+    width: extend-to-zoom;
+}
 html,body{
     margin:0;
     padding: 0;
