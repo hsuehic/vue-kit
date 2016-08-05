@@ -101,7 +101,10 @@
         props: {
             isShow: {
                 type: Boolean,
-                required: true,
+                required: false,
+                default () {
+                    return false
+                },
                 towWay: true
             }
         },
@@ -114,7 +117,6 @@
         methods: {
             show () {
                 if (!this.isAttached) {
-                    this.$mount()
                     this.$appendTo(document.body)
                 }
                 this.isShow = true

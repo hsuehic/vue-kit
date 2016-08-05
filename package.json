@@ -2,7 +2,7 @@
   "name": "vue-kit",
   "version": "0.0.1",
   "description": "A Vue.js starter project",
-  "keywords": ["Vuejs", "Bulma", "Font Awesome", "Admin"],
+  "keywords": ["Vuejs", "Bulma", "Font Awesome", "Admin", "Responsive", "ES2015", "ES6"],
   "author": "薛晓伟 <xiaoweihsueh@gmaill.com>",
   "private": false,
   "scripts": {

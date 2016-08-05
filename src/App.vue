@@ -30,12 +30,7 @@
         watch: {
             '$route.name': {
                 handler: function (val, oldVal) {
-                    try {
-                        console.log(this.appMainBody.scrollTop)
-                        this.appMainBody.scrollTop = 0
-                    } catch (ex) {
-                        console.log(ex)
-                    }
+                    console.log('older: %s,new: %s', val, oldVal)
                 }
             }
         },

@@ -8,3 +8,5 @@ test/e2e/reports
 .idea/
 static/
 index.html
+*.sublime-project
+*.sublime-workspace

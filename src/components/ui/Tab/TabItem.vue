@@ -17,7 +17,7 @@
                 show: false
             }
         },
-        created () {
+        ready () {
             this.index = this.$parent.items.length
             this.show = this.$parent.activeIndex === this.index
             this.$parent.items.push({
