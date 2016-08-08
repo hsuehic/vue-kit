@@ -1,8 +1,10 @@
 <template>
-    <div>
+    <div class="ki-popup">
+        <div class="popup-overlay" transition = "popup-overlay" v-show = "show"></div>
     </div>
 </template>
 <style>
+    @import "popup.scss";
 </style>
 <script>
     export default{

@@ -1,0 +1,74 @@
+
+@import "./../../../scss/_variable.scss";
+
+$popup_modal_bg_color: #effff4;
+
+.ki-popup {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height:100%;
+    .popup-modal {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        border-radius: 0;
+        opacity: .6;
+        color: $f_color;
+        transition: .3s;
+        height: auto;
+        background: $popup_modal_bg_color;
+        overflow-x: hidden;
+        overflow-y: auto;
+        display: none;
+        &.popup-modal-transition {
+            display: block;
+            opacity: 1;
+            transform: translate3d(0,0,0);
+        }
+        &.popup-modal-enter,
+        &.popup-modal-leave{
+            transform: translate3d(0,0,0);
+        }
+        &.full {
+            height: 100%;
+        }
+        .bar {
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            z-index: 1;
+        }
+        .modal-content {
+            height: 100%;
+            overflow: auto;
+            box-sizing: border-box;
+        }
+        .bar ~ .modal-content,.toolbar .modal-content {
+            padding-top: 2.2em;
+        }
+    }
+    .popup-overlay {
+        display: none;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 10;
+        background-colr: rgba(0,0,0,.6);
+        transition: opacify 0.3s;
+        &.popup-overlay-transition {
+            display: block;
+            opacity: 1;
+        }
+        &.popup-overlay-enter,
+        &.popup-overlay-leave {
+            opacity: 0;
+        }
+    }
+}

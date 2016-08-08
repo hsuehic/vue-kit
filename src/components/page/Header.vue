@@ -4,7 +4,7 @@
 
         </div>
         <div class="nav-center">
-            <a class="nav-item" href="https://github.com/gismall/gismall">
+            <a class="nav-item" href="https://github.com/gismall">
               <span class="icon">
                 <i class="fa fa-github"></i>
               </span>
