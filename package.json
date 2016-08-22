@@ -2,7 +2,15 @@
   "name": "vue-kit",
   "version": "0.0.1",
   "description": "A Vue.js starter project",
-  "keywords": ["Vuejs", "Bulma", "Font Awesome", "Admin", "Responsive", "ES2015", "ES6"],
+  "keywords": [
+    "Vuejs",
+    "Bulma",
+    "Font Awesome",
+    "Admin",
+    "Responsive",
+    "ES2015",
+    "ES6"
+  ],
   "author": "薛晓伟 <xiaoweihsueh@gmaill.com>",
   "private": false,
   "scripts": {
@@ -74,6 +82,7 @@
     "shelljs": "^0.6.0",
     "sinon": "^1.17.3",
     "sinon-chai": "^2.8.0",
+    "tern-node-express": "^0.4.0",
     "url-loader": "^0.5.7",
     "vue-hot-reload-api": "^1.2.0",
     "vue-html-loader": "^1.0.0",

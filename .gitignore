@@ -10,3 +10,4 @@ static/
 index.html
 *.sublime-project
 *.sublime-workspace
+.tern-project
