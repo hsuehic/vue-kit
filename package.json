@@ -40,7 +40,6 @@
     "babel-preset-stage-2": "^6.0.0",
     "browser-sync": "^2.13.0",
     "chai": "^3.5.0",
-    "chromedriver": "^2.21.2",
     "connect-history-api-fallback": "^1.1.0",
     "cross-spawn": "^2.1.5",
     "css-loader": "^0.23.0",
