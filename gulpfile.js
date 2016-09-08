@@ -2,10 +2,14 @@
  * Created by Richard on 2016/7/5.
  */
 var gulp = require("gulp");
-var gutil = require("gulp-util");
+var plugins = require('gulp-load-plugins');
+var browserSyncServer = require('browser-sync').create();
+var reload = browserSyncServer.reload;
+var jsdoc = require('gulp-jsdoc3');
+
 var webpack = require("webpack");
 var WebpackDevServer = require("webpack-dev-server");
-var webpackConfig = require("./webpack.config.js");
+var webpackConfig = require("./config/index.js");
 
 // The development server (the recommended option for development)
 gulp.task("default", ["webpack-dev-server"]);
@@ -80,4 +84,27 @@ gulp.task("webpack-dev-server", function (callback) {
         if (err) throw new gutil.PluginError("webpack-dev-server", err);
         gutil.log("[webpack-dev-server]", "http://localhost:8080/webpack-dev-server/index.html");
     });
+});
+
+var docSrc = ['README.md','src/**/*.js'];
+
+gulp.task('watch-doc',function (){
+    return gulp.src(docSrc)
+        .pipe(jsdoc());
+});
+
+/**
+ * 生成文档 ,并更新到
+ */
+gulp.task('doc',function (cb){
+    browserSyncServer.init({
+        server:{
+            baseDir: './docs/gen',
+            index: 'index.html'
+        },
+        port: 8081,
+        ui: false //禁用UI
+    });
+    gulp.watch("out/**/*.*").on('change',reload);
+    gulp.watch(docSrc,['watch-doc']);
 });

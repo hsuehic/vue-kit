@@ -2,6 +2,11 @@
  * Created by Administrator on 2016/7/11.
  */
 
+/**
+ * 创建
+ * @param path
+ * @returns {function(*=)}
+ */
 const makeComponent = (path) => {
     return (resolve) => {
         require([path], resolve)
