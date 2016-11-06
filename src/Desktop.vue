@@ -41,7 +41,6 @@
     }
 </script>
 <style lang="scss">
-    @import "scss/variable";
     @import "scss/app";
 
     .app-main {

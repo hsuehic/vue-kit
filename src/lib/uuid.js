@@ -2,7 +2,6 @@
  * Created by Richard on 2016/7/12.
  */
 
-
 /**
  * @description 提供uuid生成的方法
  */

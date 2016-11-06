@@ -28,6 +28,13 @@ module.exports = merge(baseWebpackConfig, {
     new HtmlWebpackPlugin({
       filename: 'index.html',
       template: 'src/index.html',
+      chunks: ['vendor','app'],
+      inject: true
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'mobile.html',
+      template: 'src/mobile.html',
+      chunks: ['vendor','mobile'],
       inject: true
     })
   ]

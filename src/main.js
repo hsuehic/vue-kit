@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
-import App from './App'
+import App from './Desktop'
 import {menu} from './config'
 
 Vue.use(VueRouter)
@@ -29,5 +29,5 @@ router.redirect({
 })
 // Now we can start the app!
 // The router will create an instance of App and mount to
-// the element matching the selector #app.
+// the element matching the selector app.
 router.start(App, 'app')

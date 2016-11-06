@@ -46,7 +46,7 @@ app.use(require('connect-history-api-fallback')())
 app.use(devMiddleware)
 
 // enable hot-reload and state-preserving
-// compilation error display
+// compilation error displaykjl
 app.use(hotMiddleware)
 
 // serve pure static assets
@@ -58,6 +58,5 @@ module.exports = app.listen(port, function (err) {
     console.log(err)
     return
   }
-  console.log(proxyTable)
   console.log('Listening at http://localhost:' + port + '\n')
 })
