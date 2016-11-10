@@ -12,4 +12,4 @@ const makeComponent = (path) => {
   }
 }
 
-export default  makeComponent
+export default makeComponent

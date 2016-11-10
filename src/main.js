@@ -9,10 +9,10 @@ Vue.use(VueRouter)
 // Create a router instance.
 // You can pass in additional options here, but let's
 // keep it simple for now.
-var router = new VueRouter({
-    hashbang: false,
-    history: true,
-    saveScrollPosition: false,
+let router = new VueRouter({
+    hashbang: true,
+    history: false,
+    saveScrollPosition: true,
     transitionOnLoad: true,
     linkActiveClass: 'active'
 })

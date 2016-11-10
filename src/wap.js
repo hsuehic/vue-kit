@@ -6,32 +6,11 @@ import App from './Mobile'
 
 Vue.use(VueRouter)
 
-let router = new VueRouter({
-  hashbang: true,
-  history: true,
-  saveScrollPosition: false,
-  transitionOnLoad: true,
-  linkActiveClass: 'active'
-})
+let router = new VueRouter()
 
 router.map({
   '/index': {
-
-  },
-  '/button': {
-
-  },
-  '/grid': {
-
-  },
-  '/modal': {
-
-  },
-  '/action': {
-
-  },
-  '/tips': {
-
+    component: makeComponent('./components/mobile/Index.vue')
   }
 })
 

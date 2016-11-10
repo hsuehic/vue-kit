@@ -63,6 +63,14 @@ var webpackConfig = merge(baseWebpackConfig, {
         new HtmlWebpackPlugin({
             filename: 'mobile.html',
             template: 'src/mobile.html',
+            inject: true,
+            minify: {
+                removeComments: true,
+                collapseWhitespace: true,
+                removeAttributeQuotes: true
+                // more options:
+                // https://github.com/kangax/html-minifier#options-quick-reference
+            },
             chunks: ['vendor','mobile'],
             chunksSortMode: 'dependency'
         }),
