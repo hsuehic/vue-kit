@@ -15,7 +15,7 @@
 
 * Mobile
 
-![](src/assets/img/screen-mobile-index.png =328×526)
+<img src="src/assets/img/screen-mobile-index.png" style="width: 328px; height: 526px"> 
 
 ## Build Setup
 
