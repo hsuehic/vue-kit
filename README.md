@@ -15,7 +15,7 @@
 
 * Mobile
 
-<img src="src/assets/img/screen-mobile-index.png" style="width: 328px; height: 526px"> 
+<img src="src/assets/img/screen-mobile-index.png"  width="360px" height="640px" > 
 
 ## Build Setup
 
