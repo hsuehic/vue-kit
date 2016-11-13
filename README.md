@@ -14,9 +14,8 @@
 ![](src/assets/img/screen-dashboard.png)
 
 * Mobile
-<div style="background:#f0f0f0">
-<img src="src/assets/img/screen-mobile-index.png"  width="360px" height="640px" >
- </div>
+
+<img src="src/assets/img/screen-mobile-index.png"  width="360px" height="640px" > 
 
 ## Build Setup
 
