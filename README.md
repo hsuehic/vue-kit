@@ -9,8 +9,11 @@
 [http://vue-kit.gismall.com/](http://vue-kit.gismall.com/)
 
 ## Screen shots
-
+* Desktop Admin
 ![](src/assets/img/screen-dashboard.png)
+
+* Mobile
+![](src/assets/img/screen-mobile-index.png)
 
 ## Build Setup
 

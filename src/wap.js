@@ -11,6 +11,9 @@ let router = new VueRouter()
 router.map({
   '/index': {
     component: makeComponent('./components/mobile/Index.vue')
+  },
+  '/button': {
+    component: makeComponent('./components/mobile/button/Index.vue')
   }
 })
 
