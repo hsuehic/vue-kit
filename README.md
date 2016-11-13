@@ -10,10 +10,12 @@
 
 ## Screen shots
 * Desktop Admin
+
 ![](src/assets/img/screen-dashboard.png)
 
 * Mobile
-![](src/assets/img/screen-mobile-index.png)
+
+![](src/assets/img/screen-mobile-index.png =328×526)
 
 ## Build Setup
 
