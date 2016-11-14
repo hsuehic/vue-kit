@@ -5,8 +5,16 @@
 > 用于快速构建产品原型或者演示demo
 
 ## Demo
+* Desktop admin
 
-[http://vue-kit.gismall.com/](http://vue-kit.gismall.com/)
+[http://vue-kit.gismall.com/](http://vue-kit.gismall.com/index.html)
+
+* Mobile
+
+[http://vue-kit.gismall.com/mobile.html](http://vue-kit.gismall.com/mobile.html)
+
+扫一扫
+![](src/assets/img/mobile-qrcode.png)
 
 ## Screen shots
 * Desktop Admin
