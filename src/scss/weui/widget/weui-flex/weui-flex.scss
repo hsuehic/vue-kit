@@ -1,0 +1,8 @@
+@import "../../base/fn";
+
+.#{$weui_ns}flex {
+    display: flex;
+}
+.#{$weui_ns}flex_item{
+    flex: 1;
+}

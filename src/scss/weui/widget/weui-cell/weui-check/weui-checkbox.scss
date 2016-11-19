@@ -1,0 +1,30 @@
+﻿@import "../../../base/fn";
+
+.#{$weui_ns}cells_checkbox {
+    .#{$weui_ns}cell_hd {
+        padding-right: $weuiCellInnerGapH;
+    }
+    .weui-icon_checked {
+        &:before {
+            content: '\EA01';
+            color: #C9C9C9;
+            font-size: 23px;
+            display: block;
+        }
+    }
+}
+
+// method2 accessbility
+.#{$weui_ns}check {
+    // checkbox
+    .#{$weui_ns}cells_checkbox & {
+        &:checked {
+            & + .weui-icon_checked {
+                &:before {
+                    content: '\EA06';
+                    color: #09BB07;
+                }
+            }
+        }
+    }
+}

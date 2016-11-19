@@ -8,14 +8,21 @@ Vue.use(VueRouter)
 
 let router = new VueRouter()
 
-router.map({
+let comps = ['button', 'cell', 'toast', 'dialog', 'progress', 'message', 'article', 'action-sheet',
+  'icons', 'panel', 'tab', 'search-bar']
+let routeConfig = {
   '/index': {
     component: makeComponent('./components/mobile/Index.vue')
-  },
-  '/button': {
-    component: makeComponent('./components/mobile/button/Index.vue')
   }
+}
+comps.map((item) => {
+  routeConfig[`/${item}`] = {
+    component: makeComponent(`./components/mobile/${item}/Index.vue`)
+  }
+  return item
 })
+
+router.map(routeConfig)
 
 router.redirect({
   '*': '/index'
