@@ -1,6 +1,6 @@
 ﻿@import "../../base/fn";
 
-.#{$weui_ns}cell_access {
+.#{$weui_ns}cells_access {
     @include setTapColor();
     color: inherit;
     &:active {

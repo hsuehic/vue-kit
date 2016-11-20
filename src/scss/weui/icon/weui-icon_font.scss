@@ -22,15 +22,15 @@
     color: #10AEFF;
 }
 
-.#{$weui_ns}icon_success-circle:before {
+.#{$weui_ns}icon_success_circle:before {
     font-size: 23px;
     color: #09BB07;
 }
-.#{$weui_ns}icon_success-no-circle:before {
+.#{$weui_ns}icon_success_no_circle:before {
     font-size: 23px;
     color: #09BB07;
 }
-.#{$weui_ns}icon_waiting-circle:before {
+.#{$weui_ns}icon_waiting_circle:before {
     font-size: 23px;
     color: #10AEFF;
 }
@@ -43,15 +43,15 @@
     color: #09BB07;
 }
 
-.#{$weui_ns}icon_info-circle:before {
+.#{$weui_ns}icon_info_circle:before {
     font-size: 23px;
     color: #09BB07;
 }
 
-.#{$weui_ns}icon_safe-success:before {
+.#{$weui_ns}icon_safe_success:before {
     color: #09BB07;
 }
-.#{$weui_ns}icon_safe-warn:before {
+.#{$weui_ns}icon_safe_warn:before {
     color: #FFBE00;
 }
 
@@ -71,20 +71,20 @@
 }
 
 .#{$weui_ns}icon_delete:before {
-    .#{$weui_ns}icon_gallery-delete & {
+    .#{$weui_ns}icon_gallery_delete & {
         color:#FFFFFF;
         font-size:22px;
     }
 }
 
 .#{$weui_ns}icon_msg:before {
-    font-size: 93px;
+    font-size: 104px;
     .#{$weui_ns}icon_warn & {
         color: #F76260;
     }
 }
-.#{$weui_ns}icon_msg-primary:before {
-    font-size: 93px;
+.#{$weui_ns}icon_msg_primary:before {
+    font-size: 104px;
     .#{$weui_ns}icon_warn & {
         color: #C9C9C9;
     }

@@ -1,5 +1,5 @@
 <template>
-    <div class="container" id="container"><div class="msg">
+    <div class="container"><div class="msg">
         <div class="weui-msg">
             <div class="weui-icon_area"><i class="weui-icon_success weui-icon_msg"></i></div>
             <div class="weui-text_area">

@@ -66,7 +66,7 @@ a.#{$weui_ns}media-box {
         line-height: 60px;
         text-align: center;
     }
-    .#{$weui_ns}media-box_thumb {
+    .#{$weui_ns}media-box_appmsg_thumb {
         width: 100%;
         max-height: 100%;
         vertical-align: top;
@@ -76,7 +76,7 @@ a.#{$weui_ns}media-box {
         min-width: 0;
     }
 }
-.#{$weui_ns}media-box_small-appmsg {
+.#{$weui_ns}media-box_small_appmsg {
     padding: 0;
     .#{$weui_ns}cells {
         margin-top: 0;

@@ -9,7 +9,7 @@ Vue.use(VueRouter)
 let router = new VueRouter()
 
 let comps = ['button', 'cell', 'toast', 'dialog', 'progress', 'message', 'article', 'action-sheet',
-  'icons', 'panel', 'tab', 'search-bar']
+  'icons', 'panel', 'tab', 'search-bar', 'tabbar', 'navbar']
 let routeConfig = {
   '/index': {
     component: makeComponent('./components/mobile/Index.vue')

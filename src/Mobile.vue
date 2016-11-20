@@ -11,6 +11,10 @@
 </script>
 <style lang="scss">
     @import "scss/mobile";
+    body,html
+    {
+        height: 100%;
+    }
     .container {
         height: 100%;
     }

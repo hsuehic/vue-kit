@@ -79,6 +79,7 @@ $weuiActionSheetAndroidBorderRadius: 2px;
 }
 
 //actionSheet aniamtion
-.#{$weui_ns}actionsheet_toggle{
+.#{$weui_ns}actionsheet_toggle {
+    -webkit-transform: translate(0, 0);
     transform: translate(0, 0);
 }

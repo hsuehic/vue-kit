@@ -20,7 +20,7 @@
         }
     }
 }
-.#{$weui_ns}search-bar_form {
+.#{$weui_ns}search-bar_outer{
     position: relative;
     flex: auto;
     background-color: #EFEFF4;
@@ -60,13 +60,13 @@
             outline: none;
         }
     }
-    .weui-icon-search {
+    .#{$weui_ns}icon-search {
         position: absolute;
         left: 10px;
         top: 0;
         line-height: 28px;
     }
-    .weui-icon-clear {
+    .#{$weui_ns}icon-clear {
         position: absolute;
         top: 0;
         right: 0;
@@ -94,7 +94,7 @@
         margin-right: 5px;
     }
 }
-.#{$weui_ns}search-bar_cancel-btn {
+.#{$weui_ns}search-bar_cancel_btn {
     display: none;
     margin-left: 10px;
     line-height: 28px;
@@ -111,4 +111,84 @@ input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-results-button,
 input[type="search"]::-webkit-search-results-decoration {
     display: none;
+}
+
+.#{$weui_ns}search_outer {
+    position: relative;
+    -webkit-box-flex: 1;
+    -webkit-flex: auto;
+    flex: auto;
+    background-color: #EFEFF4;
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 200%;
+        height: 200%;
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+        -webkit-transform-origin: 0 0;
+        transform-origin: 0 0;
+        border-radius: 10px;
+        border: 1px solid #E6E6EA;
+        box-sizing: border-box;
+        background: #FFFFFF;
+    }
+}
+
+.#{$weui_ns}search_inner {
+    position: relative;
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 1;
+    .#{$weui_ns}icon_search {
+        position: absolute;
+        left: 10px;
+        top: -2px;
+        line-height: 28px;
+    }
+    
+    .#{$weui_ns}search_input {
+        padding: 4px 0;
+        width: 100%;
+        height: 1.42857143em;
+        border: 0;
+        font-size: 14px;
+        line-height: 1.42857143em;
+        box-sizing: content-box;
+        background: transparent;
+    }
+}
+
+.#{$weui_ns}search_cancel {
+    display: none;
+    margin-left: 10px;
+    line-height: 28px;
+    white-space: nowrap;
+    color: #09BB07;
+}
+
+.#{$weui_ns}search_text {
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    bottom: 1px;
+    left: 1px;
+    z-index: 2;
+    border-radius: 3px;
+    text-align: center;
+    color: #9B9B9B;
+    background: #FFFFFF;
+    .#{$weui_ns}icon_search {
+        margin-right: 5px;
+    }
+    span {
+        display: inline-block;
+        font-size: 14px;
+        vertical-align: middle
+    }
 }
