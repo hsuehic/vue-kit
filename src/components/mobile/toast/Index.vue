@@ -11,7 +11,7 @@
         <div id="toast" v-show = "isShowToast">
             <div class="weui_mask_transparent"></div>
             <div class="weui-toast">
-                <i class="weui-icon_toast weui-icon_success-no-circle"></i>
+                <i class="weui-icon_toast weui-icon_success_no_circle"></i>
                 <p class="weui-toast_content">已完成</p>
             </div>
         </div>
