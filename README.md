@@ -1,6 +1,10 @@
 # Vue Start Kit
 
-> A Vue.js project, base on vue-webpack template, with bulma, chart.js, font awesome.
+> A Vue.js project, base on vue-webpack template, with bulma, chart.js, font awesome. This is based on vue 2.x and vue-router 1.x. Using with vue 1.x and vue-router 0.7.x please checkout 1.0.
+
+```blash
+  git clone --branch 1.0 https://github.com/hsuehic/vue-kit.git vue-kit
+```
 
 > 用于快速构建产品原型或者演示demo
 
