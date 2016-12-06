@@ -22,6 +22,7 @@
 <style>
 </style>
 <script>
+    import Vue from 'vue'
     import Chart from '../../ui/Chart.vue'
     export default{
         data () {

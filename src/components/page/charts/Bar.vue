@@ -7,13 +7,13 @@
             <div class="column is-half">
                 <div class="box">
                     <h3 class="title">Vertical</h3>
-                    <chart :type = "'bar'" :data = "chartData"></chart>
+                    <chart :type = "'bar'" :data = "chartData" />
                 </div>
             </div>
             <div class="column is-half">
                 <div class="box">
                     <h3 class="title">Horizontal</h3>
-                    <chart :type = "'horizontalBar'" ;width ="300" :height ="400" :data = "dynamicChartData"></chart>
+                    <chart :type = "'horizontalBar'" :width ="300" :height ="400" :data = "dynamicChartData" />
                 </div>
             </div>
         </div>

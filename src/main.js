@@ -21,7 +21,7 @@ let router = new VueRouter({
     scrollBehavior: function () {
         return { x: 0, y: 0 }
     },
-    activeClass: 'active',
+    linkActiveClass: 'active',
     routes: routes
 })
 

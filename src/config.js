@@ -16,7 +16,7 @@ let menu = [
         path: '/components',
         icon: 'laptop',
         label: 'Component',
-        isShowSubMenu: true,
+        isShowSubMenu: false,
         component: {
             template: '<router-view></router-view>'
         },
@@ -152,7 +152,7 @@ let menu = [
         label: 'Charts',
         icon: 'bar-chart',
         name: 'charts',
-        isShowSubMenu: true,
+        isShowSubMenu: false,
         component: {
             template: '<router-view></router-view>'
         },

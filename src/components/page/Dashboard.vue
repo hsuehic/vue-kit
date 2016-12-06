@@ -257,7 +257,7 @@
                 self.polarAreaData.forEach(function (item, i) {
                     Vue.set(self.polarAreaData, i, Math.ceil(Math.random() * 20))
                 })
-            }, 2000)
+            }, 1024)
         },
         beforeDestroy () {
             if (this.timer) {
