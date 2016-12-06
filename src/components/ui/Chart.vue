@@ -44,14 +44,13 @@
         },
         mounted () {
             var self = this
-            console.log('chart ready!')
             const $el = this.$el
             const id = `va-canvas-${this.uuid}`
             $el.setAttribute('id', id)
             this.chart = new Chart($el, {
                 type: self.type,
                 data: self.data,
-                options: this.options
+                options: self.options
             })
         },
         data () {

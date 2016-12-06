@@ -33,7 +33,7 @@
                 <div class="box">
                     <h3>Doughnut Chart</h3>
                     <div>
-                        <chart type="doughnut" :data="dynamicDoughnutData"></chart>
+                        <chart type="doughnut" :data="dynamicDoughnutData" :options="{animation: {easing:'easeInBack',duration: 500}}"></chart>
                     </div>
                 </div>
             </div>
@@ -257,7 +257,7 @@
                 self.polarAreaData.forEach(function (item, i) {
                     Vue.set(self.polarAreaData, i, Math.ceil(Math.random() * 20))
                 })
-            }, 1024)
+            }, 3000)
         },
         beforeDestroy () {
             if (this.timer) {
