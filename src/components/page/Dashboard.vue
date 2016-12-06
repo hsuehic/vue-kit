@@ -144,6 +144,7 @@
     }
 </style>
 <script>
+    import Vue from 'vue'
     import Chart from '../ui/Chart.vue'
 
     export default{
@@ -251,12 +252,12 @@
             var self = this
             self.timer = setInterval(function () {
                 self.doughnutData.forEach(function (item, i) {
-                    self.doughnutData.$set(i, Math.ceil(Math.random() * 1000))
+                    Vue.set(self.doughnutData, i, Math.ceil(Math.random() * 1000))
                 })
                 self.polarAreaData.forEach(function (item, i) {
-                    self.polarAreaData.$set(i, Math.ceil(Math.random() * 20))
+                    Vue.set(self.polarAreaData, i, Math.ceil(Math.random() * 20))
                 })
-            }, 1024)
+            }, 2000)
         },
         beforeDestroy () {
             if (this.timer) {

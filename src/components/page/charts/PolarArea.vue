@@ -91,9 +91,9 @@
             var self = this
             self.timer = setInterval(function () {
                 self.dynamicData.forEach(function (item, i) {
-                    self.dynamicData.$set(i, Math.ceil(Math.random() * 20))
+                    Vue.set(self.dynamicData, i, Math.ceil(Math.random() * 20))
                 })
-            }, 1024)
+            }, 2000)
         },
         beforeDestroy () {
             if (this.timer) {

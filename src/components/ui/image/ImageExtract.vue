@@ -35,7 +35,7 @@
                 extracted: null
             }
         },
-        ready () {
+        mounted () {
             var el = this.$el
             var imgs = el.querySelectorAll('img')
             var source = imgs[0]

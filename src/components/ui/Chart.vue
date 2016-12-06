@@ -42,8 +42,9 @@
                 }
             }
         },
-        ready () {
+        mounted () {
             var self = this
+            console.log('chart ready!')
             const $el = this.$el
             const id = `va-canvas-${this.uuid}`
             $el.setAttribute('id', id)

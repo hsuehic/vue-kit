@@ -18,7 +18,7 @@ module.exports = {
   },
   dev: {
     env: require('./dev.env'),
-    port: 8080,
+    port: 8082,
     productionSourceMap: true,
     proxyTable: {
       '/rpc': {

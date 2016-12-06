@@ -1,19 +1,23 @@
 <template>
     <ul>
-        <template v-for="(key,item) in model">
-            <li>
-                <a v-link ="{name: item.name, exact: true }" :title="item.label" @click="toggleShowSubMenu(item,$event)">
+        <template v-for="item in model">
+            <li @click="toggleShowSubMenu(item,$event)">
+                <router-link :to ="{name: item.name, exact: true }" :title="item.label" v-if="!item.children">
+                    <i :class="['icon','fa','fa-' + item.icon]" v-if="item.icon">
+                    </i><span class="label">{{item.label}}</span>
+                </router-link>
+                <a href="javascript:;" onclick="return false;" v-if="item.children">
                     <i :class="['icon','fa','fa-' + item.icon]" v-if="item.icon">
                     </i><span class="label">{{item.label}}</span>
                     <i :class="['collapse','fa', 'fa-angle-left','f-right',{'expanded':item.isShowSubMenu}]"
-                       v-if="item.subRoutes"
+                       v-if="item.children"
                     ></i>
                 </a>
             </li>
-            <template v-if="item.subRoutes">
+            <template v-if="item.children">
                 <li class="sub-menu" v-show="item.isShowSubMenu"
                     transition = "slide">
-                    <navi :model="item.subRoutes"></navi>
+                    <navi :model="item.children"></navi>
                 </li>
             </template>
         </template>
@@ -37,7 +41,7 @@
         name: 'navi',
         props: {
             model: {
-                type: Object,
+                type: Array,
                 required: true,
                 default: function () {
                     return {
@@ -50,7 +54,7 @@
         },
         methods: {
             toggleShowSubMenu (item, $event) {
-                if (item.subRoutes) {
+                if (item.children) {
                     item.isShowSubMenu = !item.isShowSubMenu
                     $event.preventDefault()
                     $event.stopPropagation()

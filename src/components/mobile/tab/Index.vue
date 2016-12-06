@@ -4,20 +4,20 @@
       <div class="bd">
         <div class="weui-cells_title">Tab</div>
         <div class="weui-cells weui-cells_access">
-          <a class="weui-cell" v-link="'navbar'">
+          <router-link class="weui-cell" :to="'navbar'">
             <div class="weui-cell_bd weui-cell_primary">
               <p>navbar</p>
             </div>
             <div class="weui-cell_ft">
             </div>
-          </a>
-          <a class="weui-cell" v-link = "'tabbar'">
+          </router-link>
+          <router-link class="weui-cell" :to = "'tabbar'">
             <div class="weui-cell_bd weui-cell_primary">
               <p>tabbar</p>
             </div>
             <div class="weui-cell_ft">
             </div>
-          </a>
+          </router-link>
         </div>
       </div>
     </div>

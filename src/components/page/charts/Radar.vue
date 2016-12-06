@@ -22,6 +22,7 @@
 <style>
 </style>
 <script>
+    import Vue from 'vue'
     import Chart from '../../ui/Chart.vue'
     export default{
         data () {
@@ -93,12 +94,12 @@
             var self = this
             self.timer = setInterval(function () {
                 self.data.richard.forEach(function (item, i) {
-                    self.data.richard.$set(i, Math.ceil(Math.random() * 100))
+                    Vue.set(self.data.richard, i, Math.ceil(Math.random() * 100))
                 })
                 self.data.bill.forEach(function (item, i) {
-                    self.data.bill.$set(i, Math.ceil(Math.random() * 100))
+                    Vue.set(self.data.bill, i, Math.ceil(Math.random() * 100))
                 })
-            }, 1024)
+            }, 2000)
         },
         beforeDestroy () {
             if (this.timer) {

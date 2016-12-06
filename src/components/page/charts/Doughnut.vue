@@ -22,6 +22,7 @@
 <style>
 </style>
 <script>
+    import Vue from 'vue'
     import Chart from '../../ui/Chart.vue'
     export default{
         data () {
@@ -70,9 +71,9 @@
             var self = this
             self.timer = setInterval(function () {
                 self.dynamicData.forEach(function (item, i) {
-                    self.dynamicData.$set(i, Math.ceil(Math.random() * 1000))
+                    Vue.set(self.dynamicData, i, Math.ceil(Math.random() * 1000))
                 })
-            }, 1024)
+            }, 2000)
         },
         beforeDestroy () {
             if (this.timer) {

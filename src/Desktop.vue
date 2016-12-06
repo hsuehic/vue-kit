@@ -25,7 +25,6 @@
             }
         },
         ready () {
-            this.appMainBody = this.$el.getElementsByClassName('app-main-body')[0]
         },
         watch: {
             '$route.name': {
