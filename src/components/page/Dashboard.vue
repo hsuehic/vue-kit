@@ -1,129 +1,136 @@
 <template>
-    <section class="section content">
-        <h2>Static</h2>
-        <div class="columns">
-            <div class="column">
-                <div class="notification is-success has-text-centered">
-                    <p class="title">Success</p>
-                    <p class="subtitle">97</p>
-                </div>
-            </div>
-            <div class="column">
-                <div class="notification is-info has-text-centered">
-                    <p class="title">Notice</p>
-                    <p class="subtitle">22</p>
-                </div>
-            </div>
-            <div class="column">
-                <div class=" notification is-warning has-text-centered">
-                    <p class="title">Waining</p>
-                    <p class="subtitle">48</p>
-                </div>
-            </div>
-            <div class="column">
-                <div class="notification is-danger has-text-centered">
-                    <p class="title">Threats</p>
-                    <p class="subtitle">48</p>
-                </div>
-            </div>
+  <section class="section content">
+    <h2>Static</h2>
+    <div class="columns">
+      <div class="column">
+        <div class="notification is-success has-text-centered">
+          <p class="title">Success</p>
+          <p class="subtitle">97</p>
         </div>
-        <h2>Charts</h2>
-        <div class="columns">
-            <div class="column is-half">
-                <div class="box">
-                    <h3>Doughnut Chart</h3>
-                    <div>
-                        <chart type="doughnut" :data="dynamicDoughnutData" :options="{animation: {easing:'easeInBack',duration: 500}}"></chart>
-                    </div>
-                </div>
-            </div>
-            <div class="column is-half">
-                <div class="box">
-                    <h3>Bar Chart</h3>
-                    <div>
-                        <chart type="bar" :data="barData"></chart>
-                    </div>
-                </div>
-            </div>
+      </div>
+      <div class="column">
+        <div class="notification is-info has-text-centered">
+          <p class="title">Notice</p>
+          <p class="subtitle">22</p>
         </div>
-        <div class="columns">
-            <div class="column is-half">
-                <div class="box">
-                    <h3>Radar Chart</h3>
-                    <div>
-                        <chart type="radar" :data="radarData"></chart>
-                    </div>
-                </div>
-            </div>
-            <div class="column is-half">
-                <div class="box">
-                    <h3>Polar Area Chart</h3>
-                    <div>
-                        <chart type="polarArea" :data="dynamicPolarAreaData"></chart>
-                    </div>
-                </div>
-            </div>
+      </div>
+      <div class="column">
+        <div class=" notification is-warning has-text-centered">
+          <p class="title">Waining</p>
+          <p class="subtitle">48</p>
         </div>
-        <h2>Components</h2>
-        <div class="columns">
-            <div class="column is-half">
-                <div class="box">
-                    <h3>Form</h3>
-                    <label class="label">Name</label>
-                    <p class="control">
-                        <input class="input" placeholder="Text input" type="text">
-                    </p>
-                    <label class="label">Username</label>
-                    <p class="control has-icon has-icon-right">
-                        <input class="input is-success" placeholder="Text input" value="bulma" type="text">
-                        <i class="fa fa-check"></i>
-                        <span class="help is-success">This username is available</span>
-                    </p>
-                    <label class="label">Email</label>
-                    <p class="control has-icon has-icon-right">
-                        <input class="input is-danger" placeholder="Email input" value="hello@" type="text">
-                        <i class="fa fa-warning"></i>
-                        <span class="help is-danger">This email is invalid</span>
-                    </p>
-                    <label class="label">Subject</label>
-                    <p class="control">
+      </div>
+      <div class="column">
+        <div class="notification is-danger has-text-centered">
+          <p class="title">Threats</p>
+          <p class="subtitle">48</p>
+        </div>
+      </div>
+    </div>
+    <h2>Charts</h2>
+    <div class="columns">
+      <div class="column is-half">
+        <div class="box">
+          <h3>Doughnut Chart</h3>
+          <div>
+            <chart type="doughnut" :data="dynamicDoughnutData"
+                   :options="{animation: {easing:'easeInBack',duration: 500}}"></chart>
+          </div>
+        </div>
+      </div>
+      <div class="column is-half">
+        <div class="box">
+          <h3>Bar Chart</h3>
+          <div>
+            <chart type="bar" :data="barData"></chart>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="columns">
+      <div class="column is-half">
+        <div class="box">
+          <h3>Radar Chart</h3>
+          <div>
+            <chart type="radar" :data="radarData"></chart>
+          </div>
+        </div>
+      </div>
+      <div class="column is-half">
+        <div class="box">
+          <h3>Polar Area Chart</h3>
+          <div>
+            <chart type="polarArea" :data="dynamicPolarAreaData"></chart>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h2>Components</h2>
+    <div class="columns">
+      <div class="column is-half">
+        <div class="box">
+          <h3>Form</h3>
+          <label class="label">Name</label>
+          <p class="control">
+            <input class="input" placeholder="Text input" type="text">
+          </p>
+          <label class="label">Username</label>
+          <p class="control has-icon has-icon-right">
+            <input class="input is-success" placeholder="Text input" value="bulma" type="text">
+            <i class="fa fa-check"></i>
+            <span class="help is-success">This username is available</span>
+          </p>
+          <label class="label">Email</label>
+          <p class="control has-icon has-icon-right">
+            <input class="input is-danger" placeholder="Email input" value="hello@" type="text">
+            <i class="fa fa-warning"></i>
+            <span class="help is-danger">This email is invalid</span>
+          </p>
+          <label class="label">Subject</label>
+          <p class="control">
           <span class="select">
             <select>
               <option>Select dropdown</option>
               <option>With options</option>
             </select>
           </span>
-                    </p>
-                    <label class="label">Message</label>
-                    <p class="control">
-                        <textarea class="textarea" placeholder="Textarea"></textarea>
-                    </p>
-                    <p class="control">
-                        <label class="checkbox">
-                            <input type="checkbox">
-                            Remember me
-                        </label>
-                    </p>
-                    <p class="control">
-                        <label class="radio">
-                            <input name="question" type="radio">
-                            Yes
-                        </label>
-                        <label class="radio">
-                            <input name="question" type="radio">
-                            No
-                        </label>
-                    </p>
-                    <p class="control">
-                        <button class="button is-primary">Submit</button>
-                        <button class="button is-link">Cancel</button>
-                    </p>
-                </div>
-            </div>
-            <div class="column is-half">
-            </div>
+          </p>
+          <label class="label">Message</label>
+          <p class="control">
+            <textarea class="textarea" placeholder="Textarea"></textarea>
+          </p>
+          <p class="control">
+            <label class="checkbox">
+              <input type="checkbox">
+              Remember me
+            </label>
+          </p>
+          <p class="control">
+            <label class="radio">
+              <input name="question" type="radio">
+              Yes
+            </label>
+            <label class="radio">
+              <input name="question" type="radio">
+              No
+            </label>
+          </p>
+          <p class="control">
+            <button class="button is-primary">Submit</button>
+            <button class="button is-link">Cancel</button>
+          </p>
         </div>
-    </section>
+      </div>
+      <div class="column is-half">
+        <div class="box">
+          <h3>Doughnut Chart</h3>
+          <div>
+            <canvas id="canvas" style="width: 100%; height: auto;"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </template>
 <style>
     /* always present */
@@ -142,9 +149,10 @@
         padding: 0 10px;
         opacity: 0;
     }
+
 </style>
-<script>
-    import Vue from 'vue'
+<script type = "text/javascript">
+    import ChartModal from 'chart.js/src/Chart.js'
     import Chart from '../ui/Chart.vue'
 
     export default{
@@ -248,16 +256,41 @@
                 }
             }
         },
-        created () {
-            var self = this
-            self.timer = setInterval(function () {
-                self.doughnutData.forEach(function (item, i) {
-                    Vue.set(self.doughnutData, i, Math.ceil(Math.random() * 1000))
-                })
-                self.polarAreaData.forEach(function (item, i) {
-                    Vue.set(self.polarAreaData, i, Math.ceil(Math.random() * 20))
-                })
-            }, 3000)
+        created () {},
+        mounted () {
+            let chart = new ChartModal(document.getElementById('canvas'), {
+                type: 'doughnut',
+                data: {
+                  labels: [
+                    'Red',
+                    'Blue',
+                    'Yellow',
+                    'Green'
+                  ],
+                  datasets: [{
+                    data: [10, 50, 32, 60],
+                    backgroundColor: [
+                      '#FF6384',
+                      '#36A2EB',
+                      '#FFCE56',
+                      '#EEFF00'
+                    ]
+                  }]
+                },
+                options: {
+                    animation: {
+                        duration: 500,
+                        lazy: false,
+                        easing: 'easeInBack'
+                    }
+                }
+            })
+            this.timer = setInterval(() => {
+                for (var i = 0; i < chart.data.datasets[0].data.length; i++) {
+                    chart.data.datasets[0].data[i] = Math.ceil(Math.random() * 100)
+                }
+                chart.update()
+            }, 500)
         },
         beforeDestroy () {
             if (this.timer) {
@@ -268,4 +301,5 @@
             Chart
         }
     }
+
 </script>

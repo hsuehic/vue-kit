@@ -36,6 +36,12 @@ module.exports = merge(baseWebpackConfig, {
       template: 'src/mobile.html',
       chunks: ['vendor','mobile'],
       inject: true
+    }),
+    new HtmlWebpackPlugin({
+        filename: 'chart.html',
+        template: 'src/chart.html',
+        chunks: [],
+        inject: false
     })
   ]
 })

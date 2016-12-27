@@ -6,7 +6,7 @@
         max-width:100%;
     }
 </style>
-<script>
+<script type ="text/javascript">
     import uuid from '../../lib/uuid'
     import Chart from 'chart.js/src/Chart.js'
 
@@ -52,20 +52,18 @@
                 data: self.data,
                 options: self.options
             })
+            if (self.type === 'doughnut') {
+              setInterval(() => {
+                  for (var i = 0; i < self.chart.data.datasets[0].data.length; i++) {
+                      self.chart.data.datasets[0].data[i] = Math.ceil(Math.random() * 100)
+                  }
+                  self.chart.update()
+              }, 1000)
+            }
         },
         data () {
             return {
                 chart: null
-            }
-        },
-        watch: {
-            data: {
-                handler (val, oldVal) {
-                    this.$nextTick(function () {
-                        this.chart.update()
-                    })
-                },
-                deep: true
             }
         }
     }
