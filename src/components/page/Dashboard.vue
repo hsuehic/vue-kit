@@ -5,7 +5,7 @@
       <div class="column">
         <div class="notification is-success has-text-centered">
           <p class="title">Success</p>
-          <p class="subtitle">97</p>
+          <p class="subtitle">99</p>
         </div>
       </div>
       <div class="column">
