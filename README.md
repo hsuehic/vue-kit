@@ -1,13 +1,12 @@
 # Vue Start Kit
 
->A Vue.js project, base on vue-webpack template, with bulma, chart.js, font awesome. This is based on vue 2.x and vue-router 2.x. Using with vue 1.x and vue-router 0.7.x please checkout 1.0.
-
 
 [![GitHub issues](https://img.shields.io/github/issues/hsuehic/vue-kit.svg)](https://github.com/hsuehic/vue-kit/issues)
 [![GitHub forks](https://img.shields.io/github/forks/hsuehic/vue-kit.svg)](https://github.com/hsuehic/vue-kit/network)
 [![GitHub stars](https://img.shields.io/github/stars/hsuehic/vue-kit.svg)](https://github.com/hsuehic/vue-kit/stargazers)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://img.shields.io/badge/license-MIT-blue.svg)
 
+>A Vue.js project, base on vue-webpack template, with bulma, chart.js, font awesome. This is based on vue 2.x and vue-router 2.x. Using with vue 1.x and vue-router 0.7.x please checkout 1.0.
 
 ```blash
   git clone --branch 1.0 https://github.com/hsuehic/vue-kit.git vue-kit
