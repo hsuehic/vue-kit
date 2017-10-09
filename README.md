@@ -6,9 +6,7 @@
 [![GitHub stars](https://img.shields.io/github/stars/hsuehic/vue-kit.svg)](https://github.com/hsuehic/vue-kit/stargazers)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://img.shields.io/badge/license-MIT-blue.svg)
 
-<strong style="color:#ff0000;">[deprecated]</strong>
-
->A Vue.js project, base on vue-webpack template, with bulma, chart.js, font awesome. This is based on vue 2.x and vue-router 2.x. Using with vue 1.x and vue-router 0.7.x please checkout 1.0.
+><b style="color:#ff0000;">Deprecated</b>. A Vue.js project, base on vue-webpack template, with bulma, chart.js, font awesome. This is based on vue 2.x and vue-router 2.x. Using with vue 1.x and vue-router 0.7.x please checkout 1.0.
 
 ```blash
   git clone --branch 1.0 https://github.com/hsuehic/vue-kit.git vue-kit
