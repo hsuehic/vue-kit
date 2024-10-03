@@ -17,14 +17,11 @@
 ## Demo
 * Desktop admin
 
-[http://vue-kit.gismall.com/](http://vue-kit.gismall.com/index.html)
+[http://vue-kit.ihsueh.com/](http://vue-kit.ihsueh.com/index.html)
 
 * Mobile
 
-[http://vue-kit.gismall.com/mobile.html](http://vue-kit.gismall.com/mobile.html)
-
-扫一扫
-![](src/assets/img/mobile-qrcode.png)
+[http://vue-kit.ihsueh.com/mobile.html](http://vue-kit.ihsueh.com/mobile.html)
 
 ## Screen shots
 * Desktop Admin
